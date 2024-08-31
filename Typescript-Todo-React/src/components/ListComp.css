@@ -1,0 +1,32 @@
+.ListComp{ 
+    background-color: var(--app-bg);
+    flex: 3;
+    padding: 5px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ListComp .S1{ 
+    padding: 20px;
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ListComp .S1 input { 
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    transition: all 0.4s ease-in-out;
+    width: 200px; /* Set an initial width */
+    text-align: center;
+}
+.ListComp .S1 input:focus { 
+    outline: 2px solid black;
+    width: 100%; /* Transition to full width */
+}

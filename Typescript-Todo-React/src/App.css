@@ -1,3 +1,38 @@
+:root {
+  --index-bg: white;
+  --app-bg: rgb(236, 236, 236);
+  --element-fill: white;
+
+  --primary-text: black;
+  --secondary-text: rgb(100, 100, 100);
+
+  --red: #E79AA1;
+  --orange: #F8CBAD;
+  --yellow: #FFE695;
+  --green: #C5E0B4;
+  --blue: #B4C7E7;
+  --pink: #E5BDE7;
+  --gray: #595959;
+}
+
+[data-theme='dark'] {
+  --index-bg: rgb(46, 46, 46);
+  --app-bg: rgb(85, 85, 85);
+  --element-fill: rgb(46, 46, 46);
+
+  --primary-text: rgb(255, 255, 255);
+  --secondary-text: rgb(160, 160, 160);
+
+  --red: #E79AA1;
+  --orange: #F8CBAD;
+  --yellow: #FFE695;
+  --green: #C5E0B4;
+  --blue: #B4C7E7;
+  --pink: #E5BDE7;
+  --gray: #595959;
+
+}
+
 .App{ 
 background-color: white;
 width: calc(100vw - 10px);
@@ -8,12 +43,24 @@ padding: 5px;
 
 display: flex;
 gap: 5px;
+font-family: Calibri, sans-serif;
 }
 
 
-.App .Right{ 
-  background-color: rgb(236, 236, 236);
-  flex: 3;
+
+/* MOBILE */
+
+.App-Mobile{ 
+  background-color: white;
+  width: calc(100vw - 10px);
+  height: calc(100vh - 10px);
+  
+  max-width: 2000px;
   padding: 5px;
-  border-radius: 5px;
-}
+  
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: Calibri, sans-serif;
+  }
+

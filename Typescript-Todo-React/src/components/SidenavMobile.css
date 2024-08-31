@@ -1,0 +1,111 @@
+.SidenavMobile {
+    background-color: var(--app-bg);
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* S1 */
+
+.SidenavMobile .S1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.SidenavMobile .S1 .Avatar-Container {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid black;
+
+}
+
+.SidenavMobile .S1 .User-Name {
+    font-weight: bold;
+}
+
+.SidenavMobile .S1 .Action-Buttons {
+    display: flex;
+    gap: 5px;
+}
+
+/* S2 */
+
+.SidenavMobile .S2 {
+    display: flex;
+    gap: 5px;
+}
+
+.SidenavMobile .S2 .Indicator-Container {
+    background-color: var(--element-fill);
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+}
+
+.SidenavMobile .S3{ 
+    display: flex;
+    align-items: center; 
+    flex: 1;
+    gap: 10px;
+    overflow-x: scroll;
+
+}
+
+
+.SidenavMobile .S3 .New-List-Container {
+    height: calc(100% - 20px);
+    min-width: 150px;
+    background-color: var(--element-fill);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: none;
+    font-size: 16px;
+    transition: all 0.4s ease-in-out; /* Add transition for smooth animation */
+}
+
+.SidenavMobile .S3 .New-List-Container:focus {
+    height: 20px;
+    min-width: calc(100% - 30px);
+    margin: 5px;
+    outline: 2px solid black;
+}
+
+
+.SidenavMobile .S3 .List-Container{ 
+    height: calc(100% - 20px);
+    min-width: 150px;
+    background-color: var(--element-fill);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+    
+.SidenavMobile .S3 .List-Container .List-Name{ 
+    
+}
+.SidenavMobile .S3 .List-Container .List-Count{ 
+    
+}
