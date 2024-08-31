@@ -1,0 +1,99 @@
+.Sidenav{ 
+    background-color: rgb(236, 236, 236);
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 250px;
+    max-width: 400px;
+}
+/* S1 */
+.Sidenav .S1{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Sidenav .S1 .Avatar-Container{ 
+width: 3rem;
+height: 3rem;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+outline: 1px solid black;
+}
+.Sidenav .S1 .User-Name{ 
+    font-weight: bold;
+
+}
+.Sidenav .S1 .Action-Buttons{ 
+display: flex;
+gap: 5px;
+}
+/* S2 */
+.Sidenav .S2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    grid-template-rows: repeat(2, 1fr);    /* Creates 2 rows */
+    gap: 10px; /* Adjusts the spacing between sections, optional */
+}
+.Sidenav .S2 .Indicator-Container{ 
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    aspect-ratio: 2/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* S3 */
+.Sidenav .S3{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Sidenav .S3 input{ 
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+}
+.Sidenav .S3 input:focus{ 
+    outline: 3px solid black;
+}
+.Sidenav .S3 svg {
+    position: absolute;
+    right: 0px;
+    transition: transform 0.4s ease-in-out; /* Smooth transition for the rotation */
+}
+
+.Sidenav .S3 svg:hover {
+    cursor: pointer;
+    transform: rotate(360deg); /* Rotate 360 degrees on hover */
+}
+
+/* S4 */
+.Sidenav .S4{ 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Creates 2 columns */
+    gap: 10px; 
+}
+
+.Sidenav .S4 .List-Conatiner{ 
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    aspect-ratio: 4/1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.Sidenav .S4 .List-Conatiner:hover{ 
+    box-shadow: 5px 5px rgb(213, 213, 213);
+}
