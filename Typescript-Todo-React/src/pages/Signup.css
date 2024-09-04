@@ -1,0 +1,128 @@
+.Signup {
+    background-color: var(--app-bg);
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* SIGN UP TOGGLE */
+
+.Signup .Toggle {
+    /* outline: 1px solid var(--element-outline); */
+    display: flex;
+    margin-top: 25px;
+    min-width: 160px;
+    cursor: pointer;
+}
+
+/* ANIMATIONS */
+
+
+/* LEFT */
+.Signup .Toggle .Left {
+    font-weight: bold;
+    outline: 1px solid rgb(85, 85, 85);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+.Signup .Toggle .Left-Selected {
+    font-weight: bold;
+    outline: 1px solid rgb(85, 85, 85);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    flex: 1;
+    background-color: rgb(85, 85, 85);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* RIGHT */
+.Signup .Toggle .Right {
+    font-weight: bold;
+    outline: 1px solid rgb(85, 85, 85);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+.Signup .Toggle .Right-Selected {
+    font-weight: bold;
+    outline: 1px solid rgb(85, 85, 85);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    flex: 1;
+    background-color: rgb(85, 85, 85);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* SIGN UP FORM */
+
+
+.Signup form {
+    /* outline: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    padding: 10px;
+    gap: 50px;
+    width: 500px;
+    max-width: 90%;
+    height: 500px;
+    max-height: 100%
+}
+
+/* Define the fade-in keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the keyframes to each child element of the form */
+.Signup form > * {
+    animation: fadeIn 0.5s ease-out forwards;
+    opacity: 0; /* Ensure elements start as invisible */
+    /* Optional: Stagger animation delay to make elements appear one after another */
+    animation-delay: calc(0.1s * var(--i));
+}
+
+/* Use a CSS variable for the animation delay to stagger elements */
+.Signup form > *:nth-child(1) { --i: 0; }
+.Signup form > *:nth-child(2) { --i: 1; }
+.Signup form > *:nth-child(3) { --i: 2; }
+.Signup form > *:nth-child(4) { --i: 3; }
+.Signup form > *:nth-child(5) { --i: 4; }
+.Signup form > *:nth-child(6) { --i: 5; }
+/* Add more as needed for additional children */
+
+.Signup form input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.Signup form button{ 
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(85, 85, 85);
+    color: white;
+    cursor: pointer;
+}

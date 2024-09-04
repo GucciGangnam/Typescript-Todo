@@ -66,4 +66,6 @@
   flex-direction: column;
   gap: 5px;
   font-family: Calibri, sans-serif;
+  color: var(--primary-text);
+  transition: all 0.4s ease-in-out;
 }

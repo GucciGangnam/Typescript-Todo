@@ -3,9 +3,12 @@
 import './App.css'
 // React 
 import { useState, useEffect } from 'react';
+// RRD
+import { Route, Routes } from 'react-router-dom'
 
 //Pages 
 // import { Home } from './pages/Home'
+import { Signup } from './pages/Signup';
 // Components 
 import { Sidenav } from './components/Sidenav'
 import { SidenavMobile } from './components/SidenavMobile'
@@ -41,22 +44,45 @@ function App() {
   }, [isDarkMode]);
 
   return (
-    <>
-      {isMobile ? (
-        // Mobile - viewport sub 600 px
-        <div className='App-Mobile'>
-          <SidenavMobile isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-          <ListComp/>
-        </div>
-      ) : (
-        // Desktop viewport 600px or over
-        <div className='App'>
-          <Sidenav isDarkMode={isDarkMode} toggleTheme={toggleTheme}/>
-          <ListComp/>
-        </div>
-      )}
-    </>
+
+    <Routes>
+      <Route path="/home" element={
+        <>
+          {isMobile ? (
+            // Mobile - viewport sub 600 px
+            <div className='App-Mobile'>
+              <SidenavMobile isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+              <ListComp />
+            </div>
+          ) : (
+            // Desktop viewport 600px or over
+            <div className='App'>
+              <Sidenav isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+              <ListComp />
+            </div>
+          )}
+        </>
+      } />
+
+<Route path="/login" element={
+        <>
+          
+            <div className='App'>
+              <Signup/>
+            </div>
+
+        </>
+      } />
+
+    </Routes>
+
+
+
+
   );
 }
 
 export default App;
+
+
+
