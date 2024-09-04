@@ -23,7 +23,7 @@ border-radius: 50%;
 display: flex;
 justify-content: center;
 align-items: center;
-outline: 1px solid black;
+outline: 1px solid var(--element-outline);
 }
 .Sidenav .S1 .User-Name{ 
     font-weight: bold;
@@ -72,9 +72,10 @@ gap: 5px;
     border: none;
     width: 100%;
     font-size: 16px;
+    background-color: var(--element-fill);
 }
 .Sidenav .S3 input:focus{ 
-    outline: 3px solid black;
+    outline: 2px solid var(--element-outline);
 }
 .Sidenav .S3 svg {
     position: absolute;

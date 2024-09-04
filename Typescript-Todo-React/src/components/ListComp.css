@@ -25,8 +25,9 @@
     transition: all 0.4s ease-in-out;
     width: 200px; /* Set an initial width */
     text-align: center;
+    background-color: var(--element-fill);
 }
 .ListComp .S1 input:focus { 
-    outline: 2px solid black;
+    outline: 2px solid var(--element-outline);
     width: 100%; /* Transition to full width */
 }

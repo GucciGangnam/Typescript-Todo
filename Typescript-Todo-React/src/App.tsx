@@ -5,7 +5,7 @@ import './App.css'
 import { useState, useEffect } from 'react';
 
 //Pages 
-import { Home } from './pages/Home'
+// import { Home } from './pages/Home'
 // Components 
 import { Sidenav } from './components/Sidenav'
 import { SidenavMobile } from './components/SidenavMobile'
@@ -45,13 +45,13 @@ function App() {
       {isMobile ? (
         // Mobile - viewport sub 600 px
         <div className='App-Mobile'>
-          <SidenavMobile />
+          <SidenavMobile isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
           <ListComp/>
         </div>
       ) : (
         // Desktop viewport 600px or over
         <div className='App'>
-          <Sidenav />
+          <Sidenav isDarkMode={isDarkMode} toggleTheme={toggleTheme}/>
           <ListComp/>
         </div>
       )}
